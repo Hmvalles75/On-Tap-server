@@ -13,7 +13,8 @@ const morganOption = NODE_ENV === 'production' ? 'tiny' : 'common';
 app.use(morgan(morganOption));
 app.use(helmet());
 
-app.get('/', (req, res) => {
+app.get('/restaurant', (req, res) => {
+  res.status(200);
   res.send('Hello, world!');
 });
 
