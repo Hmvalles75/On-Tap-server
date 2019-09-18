@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS restaurants (
     restaurant_name TEXT NOT NULL,
     street TEXT NOT NULL,
     telephone TEXT NOT NULL,
-    hrs TEXT NOT NULL,
+    hrs TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS beers (
@@ -18,5 +18,5 @@ CREATE TABLE IF NOT EXISTS beers (
 CREATE TABLE IF NOT EXISTS taps (
     restaurant INTEGER REFERENCES restaurants(id) NOT NULL,
     beer INTEGER REFERENCES beers(id) NOT NULL,
-    CONSTRAINT id PRIMARY KEY (restaurant_id, beer_id)
+    PRIMARY KEY (restaurant, beer)
 );

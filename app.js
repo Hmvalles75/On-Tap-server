@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
+//const db = require('./queries');
 
 const app = express();
 
@@ -13,10 +14,13 @@ const morganOption = NODE_ENV === 'production' ? 'tiny' : 'common';
 app.use(morgan(morganOption));
 app.use(helmet());
 
-app.get('/restaurant', (req, res) => {
-  res.status(200);
-  res.send('Hello, world!');
-});
+const restaurants = require('./routes/restaurants');
+const beers = require('./routes/beers');
+const taps = require('./routes/taps');
+
+app.use(restaurants);
+app.use(beers);
+app.use(taps);
 
 app.use(function errorHandler(error, req, res, next) {
   let response;

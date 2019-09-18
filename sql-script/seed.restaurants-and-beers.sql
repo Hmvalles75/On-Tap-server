@@ -47,7 +47,7 @@ VALUES
 ('Golden Road', 'Golden Road Brewing', 'Fruit and Field Beer', '4%', 'United States'),
 ('Jacaranda IPA', 'Claremont Craft Ales', 'American IPA', '6.7%', 'United States');
 
-INSERT INTO tap (restaurant, beer)
+INSERT INTO taps (restaurant, beer)
 VALUES
 (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6),
 (2, 16), (2, 17), (2, 18), (2, 19), (2, 20),
@@ -60,4 +60,4 @@ VALUES
 (9, 19), (9, 20), (9, 9), (9, 25), (9, 26), (9, 27),
 (10, 30), (10, 29), (10, 28), (10, 27), (10, 26), (10, 25), (10, 24), (10, 23);
 
-COMMIT;
+COMMIT; 
