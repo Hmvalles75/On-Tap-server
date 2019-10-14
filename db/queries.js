@@ -1,4 +1,5 @@
 const knex = require('./knex');
+const app = require('../app');
 
 module.exports = {
   restaurants: {

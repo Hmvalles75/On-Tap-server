@@ -5,9 +5,10 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
-//const db = require('./queries');
+var timeout = require('connect-timeout');
 
 const app = express();
+//app.use(timeout('5s'));
 
 const morganOption = NODE_ENV === 'production' ? 'tiny' : 'common';
 
