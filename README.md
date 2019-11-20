@@ -1,8 +1,8 @@
 # On Tap Server
 
-##server repo: https://github.com/Hmvalles75/On-Tap-server
-##client repo: https://github.com/Hmvalles75/On-Tap-client
-##Live app: https://on-tap-client.hmvalles75.now.sh/
+## server repo: https://github.com/Hmvalles75/On-Tap-server
+## client repo: https://github.com/Hmvalles75/On-Tap-client
+## Live app: https://on-tap-client.hmvalles75.now.sh/
 
 ## Installation
 
