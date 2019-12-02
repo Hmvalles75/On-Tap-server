@@ -1,5 +1,7 @@
 # On Tap Server
 
+<img src="./src/images/screenshot.JPG" alt="On Tap Screenshot" width="auto">
+
 ## server repo: https://github.com/Hmvalles75/On-Tap-server
 ## client repo: https://github.com/Hmvalles75/On-Tap-client
 ## Live app: https://on-tap-client.hmvalles75.now.sh/
